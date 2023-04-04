@@ -1,10 +1,6 @@
 INDEX VERSION 1.4+/Users/gim-yeonghyeon/Documents/GitHub/jsp/jsp2/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-3624771613.index
-1530126124.index
-1749283589.index
-3641452358.index
-1139732732.index
-4216643029.index
 1090843047.index
-3850955593.index
-204818788.index
+3624771613.index
+1139030919.index
+2936705163.index
+1068862746.index
