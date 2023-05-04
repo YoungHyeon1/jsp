@@ -49,4 +49,68 @@
     <servlet-name>SetServletContent</servlet-name>
     <url-pattern>/cset</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetServletContent</display-name>
+    <servlet-name>GetServletContent</servlet-name>
+    <servlet-class>sec03.ex01.GetServletContent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetServletContent</servlet-name>
+    <url-pattern>/cget</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>menu_member</param-name>
+    <param-value>회원등록	회원조회	회원수</param-value>
+  </context-param>
+  <context-param>
+    <param-name>menu_order</param-name>
+    <param-value>주문조회 주문등록 주문수정 주문취소</param-value>
+  </context-param>
+  <context-param>
+    <param-name>menu_goods</param-name>
+    <param-value>상품조회 상품등록 상품수정 상품삭제</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>ContextParamServlet</display-name>
+    <servlet-name>ContextParamServlet</servlet-name>
+    <servlet-class>sec03.ex02.ContextParamServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContextParamServlet</servlet-name>
+    <url-pattern>/initMenu</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ContextFileServlet</display-name>
+    <servlet-name>ContextFileServlet</servlet-name>
+    <servlet-class>sec03.ex03.ContextFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContextFileServlet</servlet-name>
+    <url-pattern>/cfile</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>InitParamServlet</display-name>
+    <servlet-name>InitParamServlet</servlet-name>
+    <servlet-class>sec04.ex01.InitParamServlet</servlet-class>
+    <init-param>
+      <description>Email Address</description>
+      <param-name>email</param-name>
+      <param-value>kimy@email.com</param-value>
+    </init-param>
+    <init-param>
+      <description>telephone</description>
+      <param-name>tel</param-name>
+      <param-value>010-1234-5678</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitParamServlet</servlet-name>
+    <url-pattern>/sinit</url-pattern>
+    <url-pattern>/sinit2</url-pattern>
+  </servlet-mapping>
+
 </web-app>
